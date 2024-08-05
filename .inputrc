@@ -1,0 +1,31 @@
+set editing-mode vi
+
+# https://stackoverflow.com/a/24206216
+set keymap vi
+set meta-flag on
+set input-meta on
+set convert-meta off
+set output-meta on
+set bell-style none
+
+
+
+$if mode=vi
+
+
+
+set keymap vi-command
+
+# these are for vi-command mode
+
+Control-l: clear-screen
+
+
+
+set keymap vi-insert
+
+# these are for vi-insert mode
+
+Control-l: clear-screen 
+
+$endif
